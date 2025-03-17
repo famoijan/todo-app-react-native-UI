@@ -1,5 +1,5 @@
 import { Text, StyleSheet, View, Image, TouchableOpacity } from 'react-native'
-import React, { Component } from 'react'
+
 
 const SplashSystem = () => {
   return (
@@ -16,9 +16,8 @@ const SplashSystem = () => {
             <Text style={styles.buttonText}> Get Started</Text>
       </TouchableOpacity>
 
-      </View>
-	  
-  )
+     </View>
+  );
 }
 
 export default SplashSystem
