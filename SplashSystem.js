@@ -1,10 +1,9 @@
 import { Text, StyleSheet, View, Image, TouchableOpacity } from 'react-native'
 import React, { Component } from 'react'
 
-export default class SplashSystem extends Component {
-  render() {
-    return (
-      <View>
+const SplashSystem = () => {
+  return (
+    <View>
       <Image source={require('./assets/images/shape.png')} style={styles.shapeImage} />
       <Image source={require('./assets/images/hero.png')} style={styles.heroImage} />
       <View style={styles.contentContainer}>
@@ -18,44 +17,46 @@ export default class SplashSystem extends Component {
       </TouchableOpacity>
 
       </View>
-    )
-  }
+	  
+  )
 }
 
+export default SplashSystem
+
 const styles = StyleSheet.create({
-    shapeImage:{},
-    heroImage:{
-        margin: "auto",
-        marginTop:78
-    },
-    contentContainer:{
-        maxWidth:213,
-        marginTop:65,
-        margin: "auto"
-    },
-    title:{
-       textAlign:"center",
-       fontWeight:"bold",
-       fontSize:18,
-       marginBottom:16 
-    },
-    content:{
-        textAlign:"center",
-        fontsize:13
-    },
-    buttonContainer:{
-        backgroundColor:"#50C2C9",
-        marginTop:136,
-        paddingVertical:16,
-        borderRadius: 8,
-        marginHorizontal:23
-        
-    },
-    buttonText:{
-        color:"white",
-        textAlign:"center",
-        fontWeight:"semibod",
-        fontsize:18
-    }
+  shapeImage:{},
+  heroImage:{
+      margin: "auto",
+      marginTop:78
+  },
+  contentContainer:{
+      maxWidth:213,
+      marginTop:65,
+      margin: "auto"
+  },
+  title:{
+     textAlign:"center",
+     fontWeight:"bold",
+     fontSize:18,
+     marginBottom:16 
+  },
+  content:{
+      textAlign:"center",
+      fontsize:13
+  },
+  buttonContainer:{
+      backgroundColor:"#50C2C9",
+      marginTop:136,
+      paddingVertical:16,
+      borderRadius: 8,
+      marginHorizontal:23
+      
+  },
+  buttonText:{
+      color:"white",
+      textAlign:"center",
+      fontWeight:"semibod",
+      fontsize:18
+  }
 
 })
