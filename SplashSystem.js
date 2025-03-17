@@ -53,7 +53,9 @@ const styles = StyleSheet.create({
     },
     buttonText:{
         color:"white",
-        textAlign:"center"
+        textAlign:"center",
+        fontWeight:"semibod",
+        fontsize:18
     }
 
 })
