@@ -22,8 +22,9 @@ const Registration = () => {
       <View style={{ padding: 27 }}>
         <View style={styles.inputContainer}>
           <TextInput placeholder="Enter your full name" style={styles.input} />
-          <TextInput placeholder="Enter your full name" style={styles.input} />
-          <TextInput placeholder="Enter your full name" style={styles.input} />
+          <TextInput placeholder="Enter your Email" style={styles.input} />
+          <TextInput placeholder="Enter Password" style={styles.input} />
+          <TextInput placeholder="Confirm password" style={styles.input} />
         </View>
 
         <TouchableOpacity style={styles.buttonContainer}>
