@@ -1,13 +1,15 @@
-import { Text, View } from 'react-native'
-import React, { Component } from 'react'
-import SplashSystem from './SplashSystem'
+import { Text, View } from "react-native";
+import React, { Component } from "react";
+// import SplashSystem from "./SplashSystem";
+import Registration from "./Registration";
 
 const App = () => {
   return (
-    <View>
-      <Text> <SplashSystem/></Text>
+    <View style={{ backgroundColor: "aliceblue" }}>
+      {/* <SplashSystem /> */}
+      <Registration />
     </View>
-  )
-}
+  );
+};
 
-export default App
+export default App;
