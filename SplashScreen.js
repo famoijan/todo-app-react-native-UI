@@ -1,8 +1,11 @@
 import { Text, StyleSheet, View, Image, TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+
 const heroImg = require("./assets/images/hero.png");
 const shapeImg = require("./assets/images/shape.png");
 
-const SplashSystem = () => {
+const SplashScreen = () => {
+  const navigation = useNavigation();
   return (
     <View>
       <Image source={shapeImg} style={styles.shapeImage} />
@@ -15,14 +18,17 @@ const SplashSystem = () => {
           tristique ut eget sed.
         </Text>
       </View>
-      <TouchableOpacity style={styles.buttonContainer}>
+      <TouchableOpacity
+        onPress={() => navigation.navigate("Register")}
+        style={styles.buttonContainer}
+      >
         <Text style={styles.buttonText}> Get Started</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
-export default SplashSystem;
+export default SplashScreen;
 
 const styles = StyleSheet.create({
   shapeImage: {},
@@ -30,12 +36,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
     margin: "auto",
     marginTop: 78,
-    borderWidth: 2,
-    borderColor: "blue",
   },
   contentContainer: {
-    borderColor: "red",
-    borderWidth: 2,
     maxWidth: 203,
     marginTop: 65,
     margin: "auto",
